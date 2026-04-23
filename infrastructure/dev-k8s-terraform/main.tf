@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1a"
+  region = "us-east-1"
 }
 
 variable "sec-gr-k8s" {
