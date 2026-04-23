@@ -108,7 +108,7 @@ resource "aws_instance" "kube-master" {
     }  
 }
 
-resource "aws_instance" "kube-worker-1" {
+resource "aws_instance" "worker-1" {
     ami = var.ami-id
     instance_type = "t3a.medium"
     iam_instance_profile = aws_iam_instance_profile.petclinic-master-server-profile.name
@@ -125,7 +125,7 @@ resource "aws_instance" "kube-worker-1" {
     }  
 }
 
-resource "aws_instance" "kube-worker-2" {
+resource "aws_instance" "worker-2" {
     ami = var.ami-id
     instance_type = "t3a.medium"
     iam_instance_profile = aws_iam_instance_profile.petclinic-master-server-profile.name
