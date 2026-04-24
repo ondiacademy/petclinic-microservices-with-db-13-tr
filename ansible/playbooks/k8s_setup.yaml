@@ -147,7 +147,7 @@
     
     - name: Show join output
       ansible.builtin.debug:
-        msg: "{{ join.output.stdout }}"
+        msg: "{{ join_output.stdout }}"
       
     
 
