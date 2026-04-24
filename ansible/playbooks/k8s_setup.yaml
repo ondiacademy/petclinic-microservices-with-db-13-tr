@@ -106,7 +106,7 @@
       ansible.builtin.command: kubeadm init --pod-network-cidr=10.244.0.0/16 --ignore-preflight-errors=All
 
     - name: Configure kubeconfig for ubuntu user
-      ansible.builtin.shell:
+      ansible.builtin.shell: |
         mkdir -p /home/ubuntu/.kube
         cp -i /etc/kubernetes/admin.conf /home/ubuntu/.kube/config
         chown ubuntu:ubuntu /home/ubuntu/.kube/config
