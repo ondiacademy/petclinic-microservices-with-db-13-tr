@@ -136,7 +136,7 @@ pipeline {
                             echo "${APP_NAME} app is successfully deployed"
                             break
                         }
-                        catch{
+                        catch (Exception){
                             echo "Could not connect to ${APP_NAME} app"
                             sleep(5)
                         }
