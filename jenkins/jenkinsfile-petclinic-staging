@@ -13,10 +13,10 @@ pipeline {
         RANCHER_URL="https://ranchertest.clarusway.click"
 
         // Get the project-id from Rancher UI (projects/namespaces --> petclinic-cluster-staging namespace --> Edit yaml --> copy projectId )
-        RANCHER_CONTEXT="c-m-xxxmnck2:p-78lnl" 
+        RANCHER_CONTEXT="c-m-8j8ppz7m:p-grf2c" 
 
        //First part of projectID
-        CLUSTERID="c-m-xxxmnck2"
+        CLUSTERID="c-m-8j8ppz7m"
 
         RANCHER_CREDS=credentials('rancher-petclinic-credentials2')
     }
